@@ -1,62 +1,299 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Expert respiratory & general care in Paratwada & Amravati by Dr. Gaurav R. Dubey – book an appointment today!" />
-  <title>Mukund Madhav Hospital</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mukund Madhav Hospital | Best Pulmonology & General Physician Care in Paratwada, District Amravati</title>
+  <meta name="description" content="Mukund Madhav Hospital — Paratwada, District Amravati (444805). Pulmonology/Chest Medicine & General Physician care: Cough, Asthma, COPD, TB, Diabetes, Hypertension, Fever Clinic, Preventive Health Checkups. Book an appointment with Dr. Gaurav R Dubey." />
+  <link rel="canonical" href="https://mukund-madhav-hospital.netlify.app/" />
+  <meta name="theme-color" content="#0B5ED7" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mukund Madhav Hospital | Paratwada (Amravati District)" />
+  <meta property="og:description" content="Pulmonology & General Physician care. Book with Dr. Gaurav R Dubey. Hours 11 AM–7 PM." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mukund-madhav-hospital.netlify.app/" />
+  <meta property="og:image" content="/assets/hero-hospital.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Structured data: Hospital + Physician + WebSite + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Hospital",
+        "@id": "https://mukund-madhav-hospital.netlify.app/#hospital",
+        "name": "Mukund Madhav Hospital",
+        "url": "https://mukund-madhav-hospital.netlify.app/",
+        "logo": "https://mukund-madhav-hospital.netlify.app/assets/logo.png",
+        "image": "https://mukund-madhav-hospital.netlify.app/assets/hero-hospital.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jaistambh Chowk",
+          "addressLocality": "Paratwada",
+          "addressRegion": "Maharashtra",
+          "postalCode": "444805",
+          "addressCountry": "IN"
+        },
+        "telephone": "+919890942257",
+        "medicalSpecialty": ["Pulmonary","PrimaryCare"],
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "11:00",
+          "closes": "19:00"
+        }]
+      },
+      {
+        "@type": "Physician",
+        "@id": "https://mukund-madhav-hospital.netlify.app/#dr-gaurav-dubey",
+        "name": "Dr. Gaurav R Dubey",
+        "url": "https://mukund-madhav-hospital.netlify.app/#doctor",
+        "image": "https://mukund-madhav-hospital.netlify.app/assets/dr-gaurav-dubey.jpg",
+        "medicalSpecialty": ["Pulmonary","PrimaryCare"],
+        "honorificSuffix": "MBBS, MD (Respiratory Medicine), CCBDM, CCMTD",
+        "qualification": "MBBS; MD (Respiratory Medicine); CCBDM; CCMTD",
+        "description": "Pulmonology / Chest Medicine and General Physician care. 17 years of experience.",
+        "affiliation": { "@id": "https://mukund-madhav-hospital.netlify.app/#hospital" },
+        "worksFor": { "@id": "https://mukund-madhav-hospital.netlify.app/#hospital" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mukund-madhav-hospital.netlify.app/#website",
+        "url": "https://mukund-madhav-hospital.netlify.app/",
+        "name": "Mukund Madhav Hospital",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://mukund-madhav-hospital.netlify.app/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://mukund-madhav-hospital.netlify.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you offer same‑day appointments?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes—call +91 9890942257 or use the online form. For urgent breathing issues, visit our emergency desk immediately." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which conditions are treated at the hospital?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Cough, Asthma, COPD, Tuberculosis (TB), Diabetes, Hypertension, and common illnesses; Fever Clinic and Preventive Health Checkups." }
+          },
+          {
+            "@type": "Question",
+            "name": "What facilities are available on site?",
+            "acceptedAnswer": { "@type": "Answer", "text": "BLOOD TESTS, ECG, SPIROMETRY (PFT), CHEST X-RAY (with partner)." }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the consulting hours?",
+            "acceptedAnswer": { "@type": "Answer", "text": "11:00 AM to 7:00 PM, Monday to Saturday." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header class="hero">
-    <img src="assets/images/hospital.jpg" alt="Hospital environment" />
-    <div class="overlay">
-      <h1>Compassionate Respiratory Care</h1>
-      <p>Serving Paratwada & Amravati</p>
-      <a href="tel:+919890942257" class="btn">Call Now</a>
+  <div class="topbar">
+    <div class="container">
+      <span>Support: <a href="tel:+919890942257">+91 9890942257</a></span>
+      <div class="topbar-cta">
+        <a class="btn btn-outline btn--lg" href="#book">Book Appointment</a>
+        <a class="btn btn-whatsapp btn--lg" href="https://wa.me/919890942257?text=Hi%20Mukund%20Madhav%20Hospital%2C%20I%20want%20to%20book%20an%20appointment." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/logo.png" alt="Mukund Madhav Hospital logo" width="44" height="44" />
+        <span>Mukund Madhav Hospital</span>
+      </a>
+      <nav id="nav" class="nav">
+        <a href="#services">Services</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#doctor">Dr. Gaurav R Dubey</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn-primary btn--lg">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-controls="nav" aria-expanded="false"><span class="sr-only">Toggle navigation</span>☰</button>
     </div>
   </header>
 
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card"><h3>General Physician</h3><p>Comprehensive care for everyday illnesses.</p></div>
-      <div class="card"><h3>Pulmonology</h3><p>Expert treatment for asthma, TB, COPD & more.</p></div>
-      <div class="card"><h3>Diagnostics</h3><p>ECG, X-Ray, Blood Tests, Spirometry & more.</p></div>
+  <section class="hero">
+    <div class="container grid-2">
+      <div class="hero-copy">
+        <h1>Compassionate care. Expert pulmonology & general physician services in Paratwada.</h1>
+        <p>From routine consultations to advanced chest and lung care, our hospital delivers safe, evidence‑based treatment led by <strong>Dr. Gaurav R Dubey</strong> (MBBS, MD – Respiratory Medicine, CCBDM, CCMTD; 17 years experience).</p>
+        <div class="hero-cta">
+          <a href="#book" class="btn btn-primary btn--lg">Book Appointment</a>
+          <a href="#services" class="btn btn-secondary btn--lg">Explore Services</a>
+        </div>
+        <ul class="badges">
+          <li>Same‑day OPD (subject to availability)</li>
+          <li>Diagnostics & Pharmacy access</li>
+          <li>Priority triage for breathing issues</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <picture>
+          <source srcset="/assets/hero-hospital.webp" type="image/webp">
+          <img src="/assets/hero-hospital.jpg" alt="Mukund Madhav Hospital reception and care area" width="680" height="480" />
+        </picture>
+      </div>
     </div>
   </section>
 
-  <section class="about-doctor">
-    <img src="assets/images/doctor.jpg" alt="Dr. Gaurav R. Dubey" />
-    <div>
-      <h2>Meet Dr. Gaurav R. Dubey</h2>
-      <p>MBBS, MD (Respiratory Medicine), CCBDM, CCMTD<br/>
-         17+ years of experience. Compassionate, expert care in Pulmonology & General Medicine.
-      </p>
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Core Services</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <picture>
+            <!-- <source srcset="/assets/pulmonology.webp" type="image/webp"> -->
+            <img src="/assets/pulmonology.jpg" alt="Pulmonology care: doctor reviewing lung tests" width="420" height="260" loading="lazy" />
+          </picture>
+          <h3>Pulmonology / Chest Medicine</h3>
+          <p>Specialized care for asthma, COPD, bronchitis, pneumonia, allergy‑related issues, smoking‑cessation support and more.</p>
+        </article>
+        <article class="card reveal">
+          <picture>
+            <!-- <source srcset="/assets/general-practice.webp" type="image/webp"> -->
+            <img src="/assets/general-practice.jpg" alt="General physician consultation with vitals check" width="420" height="260" loading="lazy" />
+          </picture>
+          <h3>General Physician Care</h3>
+          <p>Comprehensive primary care for common illnesses, diabetes, hypertension, fever clinic and preventive health checkups.</p>
+        </article>
+        <article class="card reveal">
+          <picture>
+            <!-- <source srcset="/assets/tb-care.webp" type="image/webp"> -->
+            <img src="/assets/tb-care.jpg" alt="TB care: doctor discussing chest X‑ray findings" width="420" height="260" loading="lazy" />
+          </picture>
+          <h3>TB Diagnosis & Management</h3>
+          <p>Guideline‑based testing, treatment and follow‑up for tuberculosis, with patient education and adherence support.</p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section class="testimonials">
-    <h2>What Patients Say</h2>
-    <blockquote>"Dr. Dubey helped me breathe freely again!"</blockquote>
-    <blockquote>"Efficient and caring service. Highly recommend."</blockquote>
+  <section id="doctor" class="section alt">
+    <div class="container grid-2">
+      <div>
+        <picture>
+          <source srcset="/assets/dr-gaurav-dubey.webp" type="image/webp">
+          <img class="doc-photo" src="/assets/dr-gaurav-dubey.jpg" alt="Dr. Gaurav R Dubey, MBBS, MD (Respiratory Medicine), CCBDM, CCMTD" width="520" height="520" loading="lazy" />
+        </picture>
+      </div>
+      <div>
+        <h2>Dr. Gaurav R Dubey</h2>
+        <p class="sub">MBBS, MD (Respiratory Medicine), CCBDM, CCMTD — 17 years experience</p>
+        <ul class="check">
+          <li>Pulmonology / Chest Medicine & General Physician care</li>
+          <li>Focus on Asthma, COPD, Bronchitis, Pneumonia, Allergy</li>
+          <li>Diabetes, Hypertension & common illnesses management</li>
+          <li>Fever Clinic & Preventive Health Checkups</li>
+        </ul>
+        <div class="hero-cta">
+          <a href="#book" class="btn btn-primary btn--lg">Book with Dr. Dubey</a>
+        </div>
+      </div>
+    </div>
   </section>
-  
-	<section class="appointment">
-  	<h2>Book an Appointment</h2>
-  	<form action="mailto:example@example.com" method="post" enctype="text/plain">
-    	<input type="text" name="name" placeholder="Your Name" required />
-    	<input type="tel" name="phone" placeholder="Your Phone Number" required />
-    	<input type="email" name="email" placeholder="Your Email (optional)" />
-    	<textarea name="message" rows="4" placeholder="Your Concern or Message"></textarea>
-    	<button type="submit">Send Request</button>
-  	</form>
-	</section>
 
-  <footer>
-    <p>Mukund Madhav Hospital | Jaistambh Chowk, Paratwada, Dist. Amravati, MH</p>
-    <p>Contact: <a href="tel:+919890942257">+91 98909 42257</a></p>
+  <section id="facilities" class="section">
+    <div class="container">
+      <h2>Available Facilities</h2>
+      <div class="features">
+        <div class="feature reveal"><h3>BLOOD TESTS</h3><p>On‑site sample collection with quick reports.</p></div>
+        <div class="feature reveal"><h3>ECG</h3><p>Timely cardiac screening for at‑risk and symptomatic patients.</p></div>
+        <div class="feature reveal"><h3>SPIROMETRY (PFT)</h3><p>Objective lung function testing for asthma & COPD management.</p></div>
+        <div class="feature reveal"><h3>CHEST X‑RAY</h3><p>Available with trusted partner for rapid imaging.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="section alt">
+    <div class="container">
+      <h2>Book an Appointment (11:00 AM – 7:00 PM)</h2>
+      <form name="appointment" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="form">
+        <input type="hidden" name="form-name" value="appointment" />
+        <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+
+        <div class="grid-form">
+          <label>Full name* <input name="name" required /></label>
+          <label>Phone* <input name="phone" type="tel" required /></label>
+          <label>Preferred date <input name="date" type="date" /></label>
+          <label>Reason for visit <input name="reason" placeholder="e.g., Cough/Asthma follow‑up" /></label>
+        </div>
+        <br/>
+        <button class="btn btn-primary btn--lg" type="submit">Request Slot</button>
+        <a class="btn btn-whatsapp btn--lg" href="https://wa.me/919890942257?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <p class="form-note">We typically confirm within the same working day. For urgent breathing issues, visit immediately.</p>
+      </form>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2>What patients say</h2>
+      <div class="slider" aria-label="Patient testimonials">
+        <figure class="slide">“Clean premises and very caring staff. Dr. Dubey explains everything.” — Patient</figure>
+        <figure class="slide">“Quick relief for my asthma. Thank you.” — Patient</figure>
+        <figure class="slide">“Appointment and pharmacy in one place—very convenient.” — Patient</figure>
+      </div>
+      <p class="muted small">We show genuine testimonials but avoid star‑rating markup here to follow Google’s review‑snippet policy for local businesses.</p>
+    </div>
+  </section>
+
+  <section id="faq" class="section alt">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <details class="faq"><summary>Do you offer same‑day appointments?</summary><div>Yes—call <a href="tel:+919890942257">+91 9890942257</a> or use the form above.</div></details>
+      <details class="faq"><summary>Which conditions are treated?</summary><div>Cough, Asthma, COPD, TB; Diabetes, Hypertension & common illnesses; Fever Clinic & Preventive Health Checkups.</div></details>
+      <details class="faq"><summary>What facilities are available?</summary><div>BLOOD TESTS, ECG, SPIROMETRY (PFT), CHEST X‑RAY (partner).</div></details>
+      <details class="faq"><summary>What are the hours?</summary><div>11:00 AM – 7:00 PM (Mon–Sat).</div></details>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Visit us</h2>
+        <p>
+          <strong>Mukund Madhav Hospital</strong><br />
+          Jaistambh Chowk, Paratwada,<br />
+          District Amravati, Maharashtra – 444805<br />
+          Phone/WhatsApp: <a href="tel:+919890942257">+91 9890942257</a><br />
+          Hours: 11:00 AM – 7:00 PM (Mon–Sat)
+        </p>
+      </div>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2126.33555713306!2d77.51459832423969!3d21.29417512349564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6f5007aca6441%3A0x2766a9a4172fcb56!2sMukund%20madhav%20hospital!5e0!3m2!1sen!2sin!4v1754984356161!5m2!1sen!2sin"
+          width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> Mukund Madhav Hospital • All rights reserved</p>
+      <p class="attribution">Designed & built by <strong>First thought technology limited</strong></p>
+    </div>
   </footer>
+
+  <script src="/script.js" defer></script>
 </body>
 </html>
