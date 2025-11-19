@@ -114,6 +114,11 @@
           },
           {
             "@type": "Question",
+            "name": "Do you provide online consultation?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No, we do not currently offer online or teleconsultation services. All appointments must be in-person at our hospital in Paratwada." }
+          },
+          {
+            "@type": "Question",
             "name": "Which conditions are treated at the hospital?",
             "acceptedAnswer": { "@type": "Answer", "text": "Cough, Asthma, COPD, Tuberculosis (TB), Diabetes, Hypertension, and common illnesses; Fever Clinic and Preventive Health Checkups." }
           },
@@ -135,11 +140,17 @@
 </head>
 <body>
   <div class="topbar">
-    <div class="container">
-      <span>Support: <a href="tel:+919890942257">+91 9890942257</a></span>
-      <div class="topbar-cta">
-        <a class="btn btn-outline btn--lg" href="#book">Book Appointment</a>
-        <a class="btn btn-whatsapp btn--lg" href="https://wa.me/919890942257?text=Hi%20Mukund%20Madhav%20Hospital%2C%20I%20want%20to%20book%20an%20appointment." target="_blank" rel="noopener">WhatsApp</a>
+    <div class="container topbar-inner">
+      <a href="tel:+919890942257" class="topbar-contact">
+        <span class="icon">📞</span>
+        <span class="contact-details">
+          <strong>+91 9890942257</strong>
+          <small>Call for appointments</small>
+        </span>
+      </a>
+      <div class="topbar-hours">
+        <span class="icon">🕐</span>
+        <span>Mon-Sat: 11:00 AM – 7:00 PM</span>
       </div>
     </div>
   </div>
@@ -151,12 +162,12 @@
         <span>Mukund Madhav Hospital</span>
       </a>
       <nav id="nav" class="nav">
+        <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#facilities">Facilities</a>
-        <a href="#doctor">Dr. Gaurav R Dubey</a>
-        <a href="#testimonials">Testimonials</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact" class="btn btn-primary btn--lg">Contact</a>
+        <a href="#contact">Location</a>
+        <a href="#book" class="btn btn-primary">Book Appointment</a>
       </nav>
       <button class="nav-toggle" aria-controls="nav" aria-expanded="false"><span class="sr-only">Toggle navigation</span>☰</button>
     </div>
@@ -166,15 +177,12 @@
     <div class="container grid-2">
       <div class="hero-copy">
         <h1>Expert Pulmonology & General Physician Care in Paratwada</h1>
-        <p class="hero-subtitle">Mukund Madhav Hospital provides comprehensive respiratory and primary care services in Paratwada, Amravati District. Led by Dr. Gaurav R Dubey (MBBS, MD Respiratory Medicine), we offer evidence-based treatment with 17 years of clinical experience.</p>
-        <div class="hero-cta">
-          <a href="#book" class="btn btn-primary btn--lg">Book Appointment</a>
-          <a href="tel:+919890942257" class="btn btn-secondary btn--lg">Call +91 98909 42257</a>
-        </div>
+        <p class="hero-subtitle">Comprehensive respiratory and primary care services in Paratwada, Amravati District. Led by Dr. Gaurav R Dubey, MBBS, MD (Respiratory Medicine) with 17 years of clinical experience.</p>
         <ul class="badges">
-          <li>Same-day appointments available</li>
-          <li>On-site diagnostics</li>
-          <li>17 years experience</li>
+          <li>17+ years experience</li>
+          <li>Pulmonology & General Care</li>
+          <li>Preventive Health Services</li>
+          <li>Same-day appointments</li>
         </ul>
       </div>
       <div class="hero-media">
@@ -186,11 +194,11 @@
     </div>
   </section>
 
-  <section class="section intro-section">
+  <section id="about" class="section intro-section">
     <div class="container">
       <div class="intro-content">
-        <h2>Why Mukund Madhav Hospital is the Best Choice in Paratwada & Amravati</h2>
-        <p>When searching for the <strong>best doctor in Paratwada</strong> or the <strong>best pulmonologist in Amravati</strong>, patients trust <strong>Mukund Madhav Hospital</strong> for comprehensive healthcare. As the leading <strong>nursing home and hospital in Paratwada</strong>, we combine advanced medical technology with personalized care.</p>
+        <h2>Trusted Healthcare in Paratwada & Amravati</h2>
+        <p>Mukund Madhav Hospital provides specialized pulmonology care and comprehensive general medicine services. We combine clinical expertise with modern diagnostic facilities to deliver quality healthcare in Paratwada.</p>
         <div class="intro-stats">
           <div class="stat-item">
             <div class="stat-number">17+</div>
@@ -198,24 +206,48 @@
           </div>
           <div class="stat-item">
             <div class="stat-number">5000+</div>
-            <div class="stat-label">Happy Patients</div>
+            <div class="stat-label">Patients Treated</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Patient Satisfaction</div>
+            <div class="stat-number">Mon-Sat</div>
+            <div class="stat-label">11 AM - 7 PM</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">⭐⭐⭐⭐⭐</div>
-            <div class="stat-label">Top Rated</div>
+            <div class="stat-number">In-Person</div>
+            <div class="stat-label">Consultations</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services" class="section">
+  <section id="doctor" class="section">
+    <div class="container grid-2">
+      <div>
+        <picture>
+          <source srcset="/assets/dr-gaurav-dubey.webp" type="image/webp">
+          <img class="doc-photo" src="/assets/dr-gaurav-dubey.jpg" alt="Dr. Gaurav R Dubey - Pulmonologist and General Physician in Paratwada" width="520" height="520" loading="lazy" />
+        </picture>
+      </div>
+      <div>
+        <h2>Dr. Gaurav R Dubey</h2>
+        <p class="sub">MBBS, MD (Respiratory Medicine), CCBDM, CCMTD</p>
+        <p>Dr. Dubey specializes in pulmonology and general medicine with 17 years of clinical experience. He provides expert care for respiratory conditions, chronic diseases, and preventive healthcare.</p>
+        <ul class="check">
+          <li>Pulmonology & Chest Medicine</li>
+          <li>General Physician & Primary Care</li>
+          <li>Asthma, COPD, Bronchitis, Pneumonia</li>
+          <li>Diabetes & Hypertension Management</li>
+          <li>TB Diagnosis & Treatment</li>
+          <li>Preventive Health Checkups & Wellness Care</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section alt">
     <div class="container">
-      <h2>Comprehensive Medical Services at Paratwada's Best Hospital</h2>
+      <h2>Medical Services</h2>
       <div class="cards">
         <article class="card reveal">
           <picture>
@@ -245,63 +277,80 @@
     </div>
   </section>
 
-  <section id="doctor" class="section alt">
-    <div class="container grid-2">
-      <div>
-        <picture>
-          <source srcset="/assets/dr-gaurav-dubey.webp" type="image/webp">
-          <img class="doc-photo" src="/assets/dr-gaurav-dubey.jpg" alt="Dr. Gaurav R Dubey - Best Pulmonologist and Doctor in Paratwada, Amravati" width="520" height="520" loading="lazy" />
-        </picture>
-      </div>
-      <div>
-        <h2>Dr. Gaurav R Dubey</h2>
-        <p class="sub">MBBS, MD (Respiratory Medicine), CCBDM, CCMTD</p>
-        <p>With 17 years of experience in pulmonology and general medicine, Dr. Dubey provides expert care for respiratory conditions and primary health needs in Paratwada and Amravati District.</p>
-        <ul class="check">
-          <li>Pulmonology & Chest Medicine</li>
-          <li>Asthma, COPD, Bronchitis, Pneumonia</li>
-          <li>Diabetes & Hypertension Management</li>
-          <li>TB Diagnosis & Treatment</li>
-          <li>Preventive Health Checkups</li>
-        </ul>
-        <div class="hero-cta">
-          <a href="#book" class="btn btn-primary btn--lg">Book Appointment</a>
-          <a href="tel:+919890942257" class="btn btn-outline btn--lg">Call Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="facilities" class="section">
+  <section id="facilities" class="section alt">
     <div class="container">
-      <h2>Available Facilities</h2>
+      <h2>Diagnostic Facilities</h2>
       <div class="features">
-        <div class="feature reveal"><h3>BLOOD TESTS</h3><p>On‑site sample collection with quick reports.</p></div>
-        <div class="feature reveal"><h3>ECG</h3><p>Timely cardiac screening for at‑risk and symptomatic patients.</p></div>
-        <div class="feature reveal"><h3>SPIROMETRY (PFT)</h3><p>Objective lung function testing for asthma & COPD management.</p></div>
-        <div class="feature reveal"><h3>CHEST X‑RAY</h3><p>Available with trusted partner for rapid imaging.</p></div>
+        <div class="feature reveal"><h3>BLOOD TESTS</h3><p>On‑site sample collection with quick reports</p></div>
+        <div class="feature reveal"><h3>ECG</h3><p>Cardiac screening for at‑risk patients</p></div>
+        <div class="feature reveal"><h3>SPIROMETRY (PFT)</h3><p>Lung function testing for asthma & COPD</p></div>
+        <div class="feature reveal"><h3>CHEST X‑RAY</h3><p>Available with trusted diagnostic partner</p></div>
       </div>
     </div>
   </section>
 
-  <section id="book" class="section alt">
+  <section id="book" class="section book-section">
     <div class="container">
-      <h2>Book an Appointment (11:00 AM – 7:00 PM)</h2>
-      <form name="appointment" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="form">
-        <input type="hidden" name="form-name" value="appointment" />
-        <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
-
-        <div class="grid-form">
-          <label>Full name* <input name="name" required /></label>
-          <label>Phone* <input name="phone" type="tel" required /></label>
-          <label>Preferred date <input name="date" type="date" /></label>
-          <label>Reason for visit <input name="reason" placeholder="e.g., Cough/Asthma follow‑up" /></label>
+      <div class="book-wrapper">
+        <div class="book-header">
+          <h2>Book Your Appointment</h2>
+          <p>Get expert medical care from Dr. Gaurav R Dubey. Fill out the form below and we'll confirm your appointment.</p>
         </div>
-        <br/>
-        <button class="btn btn-primary btn--lg" type="submit">Request Slot</button>
-        <a class="btn btn-whatsapp btn--lg" href="https://wa.me/919890942257?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener">Chat on WhatsApp</a>
-        <p class="form-note">We typically confirm within the same working day. For urgent breathing issues, visit immediately.</p>
-      </form>
+        
+        <div class="disclaimer">
+          <strong>⚠️ Note:</strong> Online consultation is not available. All consultations are in-person.
+        </div>
+        
+        <form id="appointmentForm" class="form">
+          <div class="grid-form">
+            <label>
+              Full Name*
+              <input type="text" name="name" id="name" required placeholder="Enter your name" />
+            </label>
+            <label>
+              Phone Number*
+              <input type="tel" name="phone" id="phone" required pattern="[0-9]{10}" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number" autocomplete="tel" />
+              <span class="input-hint">Enter 10-digit number without +91</span>
+            </label>
+            <label>
+              Preferred Date
+              <input type="date" name="date" id="date" />
+            </label>
+            <label>
+              Reason for Visit
+              <select name="reason" id="reason">
+                <option value="">Select reason</option>
+                <option value="Respiratory Issues">Respiratory Issues (Cough, Breathing)</option>
+                <option value="Asthma/COPD">Asthma / COPD</option>
+                <option value="Diabetes">Diabetes Management</option>
+                <option value="Hypertension">Hypertension / Blood Pressure</option>
+                <option value="TB Screening">TB Screening / Treatment</option>
+                <option value="General Checkup">General Health Checkup</option>
+                <option value="Fever">Fever / Common Illness</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+          </div>
+          <button class="btn btn-primary btn--lg" type="submit">Book Appointment</button>
+          <p class="form-note">By submitting, you'll be redirected to WhatsApp to send your appointment request to us.</p>
+        </form>
+        
+        <div class="contact-methods">
+          <p class="or-divider">Prefer to contact directly?</p>
+          <div class="contact-grid">
+            <a href="tel:+919890942257" class="contact-method">
+              <span class="icon">📞</span>
+              <strong>Call</strong>
+              <span>+91 9890942257</span>
+            </a>
+            <a href="https://wa.me/919890942257?text=Hi,%20I'd%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener" class="contact-method">
+              <span class="icon">💬</span>
+              <strong>WhatsApp</strong>
+              <span>Quick message</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -321,6 +370,7 @@
     <div class="container">
       <h2>Frequently Asked Questions</h2>
       <details class="faq"><summary>Do you offer same‑day appointments?</summary><div>Yes—call <a href="tel:+919890942257">+91 9890942257</a> or use the form above.</div></details>
+      <details class="faq"><summary>Do you provide online consultation?</summary><div>No, we do not currently offer online or teleconsultation services. All appointments must be in-person at our hospital in Paratwada.</div></details>
       <details class="faq"><summary>Which conditions are treated?</summary><div>Cough, Asthma, COPD, TB; Diabetes, Hypertension & common illnesses; Fever Clinic & Preventive Health Checkups.</div></details>
       <details class="faq"><summary>What facilities are available?</summary><div>BLOOD TESTS, ECG, SPIROMETRY (PFT), CHEST X‑RAY (partner).</div></details>
       <details class="faq"><summary>What are the hours?</summary><div>11:00 AM – 7:00 PM (Mon–Sat).</div></details>
@@ -339,19 +389,14 @@
             District Amravati, Maharashtra – 444805
           </p>
           
-          <h3>📞 Contact Information</h3>
+          <h3>📞 Contact</h3>
           <p>
             Phone/WhatsApp: <a href="tel:+919890942257"><strong>+91 9890942257</strong></a><br />
             Hours: <strong>11:00 AM – 7:00 PM</strong> (Monday to Saturday)
           </p>
           
-          <h3>🚗 Easily Accessible</h3>
-          <p>Located at Jaistambh Chowk, we serve patients from Paratwada, Amravati, and surrounding areas. Our hospital is the preferred choice for residents seeking quality healthcare in the region.</p>
-          
-          <div class="contact-cta">
-            <a href="#book" class="btn btn-primary btn--lg">Book Appointment Now</a>
-            <a href="https://wa.me/919890942257?text=Hi%20Mukund%20Madhav%20Hospital%2C%20I%20want%20to%20book%20an%20appointment." class="btn btn-whatsapp btn--lg" target="_blank" rel="noopener">Chat on WhatsApp</a>
-          </div>
+          <h3>🚗 Getting Here</h3>
+          <p>Located at Jaistambh Chowk in the heart of Paratwada, easily accessible from Amravati and surrounding areas.</p>
         </div>
         <div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2126.33555713306!2d77.51459832423969!3d21.29417512349564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6f5007aca6441%3A0x2766a9a4172fcb56!2sMukund%20madhav%20hospital!5e0!3m2!1sen!2sin!4v1754984356161!5m2!1sen!2sin"
