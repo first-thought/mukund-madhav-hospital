@@ -99,21 +99,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       }
       
-      // Format the WhatsApp message
-      let message = '*New Appointment Request*\n\n';
-      message += '*Name:* ' + name + '\n';
-      message += '*Mobile:* +91 ' + phone + '\n';
-      if (formattedDate) message += '*Preferred Date:* ' + formattedDate + '\n';
-      if (reason) message += '*Reason:* ' + reason + '\n';
-      message += '\n_Sent from Mukund Madhav Hospital website_';
-      
-      console.log('WhatsApp message:', message);
-      
-      // Encode the message for URL
-      const encodedMessage = encodeURIComponent(message);
-      
-      // Your WhatsApp number (with country code, no + or spaces)
-      const whatsappNumber = '919890942257';
+    // Format the WhatsApp message
+    let message = '*New Appointment Request*\n\n';
+    message += '*Name:* ' + name + '\n';
+    message += '*Mobile:* +91 ' + phone + '\n';
+    if (formattedDate) message += '*Preferred Date:* ' + formattedDate + '\n';
+    if (reason) message += '*Reason:* ' + reason + '\n';
+    message += '\nSent from Mukund Madhav Hospital website';
+    
+    console.log('WhatsApp message:', message);
+    
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Your WhatsApp number (with country code, no + or spaces)
+    const whatsappNumber = '919404336972';
       
       // Create WhatsApp URL
       const whatsappURL = 'https://wa.me/' + whatsappNumber + '?text=' + encodedMessage;
