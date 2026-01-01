@@ -1,4 +1,11 @@
+# Mukund Madhav Hospital - Robots.txt
+# Best Hospital in Paratwada & Amravati
+
 User-agent: *
 Allow: /
 
-Sitemap: https://mukund-madhav-hospital.netlify.app/sitemap.xml
+# Sitemap location
+Sitemap: https://mukundmadhavhospital.in/sitemap.xml
+
+# Block thank you page from indexing (handled via meta tag too)
+Disallow: /thanks.html
