@@ -589,6 +589,22 @@ p {
 
 #doctor h2 {
   color: var(--maroon);
+  text-align: center;
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+#doctor h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--terracotta);
+  border-radius: 2px;
 }
 
 .doc-photo {
@@ -976,6 +992,109 @@ p {
 }
 
 /* ============================================
+   GOOGLE REVIEWS SECTION
+   ============================================ */
+
+#reviews {
+  background: #fff;
+}
+
+.reviews-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.google-rating {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 40px;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.google-rating img {
+  height: 24px;
+  width: auto;
+}
+
+.rating-stars {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.google-rating p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.review-stars {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.slide cite {
+  display: block;
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--maroon);
+}
+
+.featured-review {
+  background: linear-gradient(135deg, #fff 0%, var(--cream) 100%);
+  border: 2px solid var(--maroon);
+}
+
+.featured-review strong {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--maroon);
+  margin-bottom: 12px;
+  font-style: normal;
+}
+
+.featured-review p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.featured-review::before {
+  display: none;
+}
+
+.review-cta {
+  text-align: center;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.review-cta p {
+  font-size: 1.1rem;
+  color: var(--charcoal-light);
+  margin-bottom: 20px;
+}
+
+.review-cta .btn {
+  margin: 0 8px 12px;
+}
+
+@media (max-width: 600px) {
+  .review-cta .btn {
+    display: block;
+    width: 100%;
+    margin: 0 0 12px;
+  }
+}
+
+/* ============================================
    FAQ SECTION
    ============================================ */
 
@@ -1128,17 +1247,7 @@ p {
   border-radius: 2px;
 }
 
-/* Override for left-aligned headings */
-#doctor h2::after,
-.book-header h2::after {
-  left: 0;
-  transform: none;
-}
-
-.book-header h2::after {
-  left: 50%;
-  transform: translateX(-50%);
-}
+/* All section headings centered */
 
 /* ============================================
    SCROLL REVEAL ANIMATION
