@@ -973,15 +973,7 @@ p {
   min-width: 280px;
 }
 
-.slide::before {
-  content: '"';
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  color: var(--terracotta);
-  line-height: 0;
-  display: block;
-  margin-bottom: 16px;
-}
+/* Removed decorative quote - reviews now use structured card format */
 
 .small {
   font-size: 0.85rem;
@@ -1037,6 +1029,21 @@ p {
   letter-spacing: 1px;
 }
 
+.slide strong {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--maroon);
+  margin-bottom: 12px;
+  font-style: normal;
+}
+
+.slide p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  font-style: italic;
+}
+
 .slide cite {
   display: block;
   margin-top: 16px;
@@ -1048,25 +1055,6 @@ p {
 .featured-review {
   background: linear-gradient(135deg, #fff 0%, var(--cream) 100%);
   border: 2px solid var(--maroon);
-}
-
-.featured-review strong {
-  display: block;
-  font-size: 1.05rem;
-  color: var(--maroon);
-  margin-bottom: 12px;
-  font-style: normal;
-}
-
-.featured-review p {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  font-style: italic;
-}
-
-.featured-review::before {
-  display: none;
 }
 
 .review-cta {
